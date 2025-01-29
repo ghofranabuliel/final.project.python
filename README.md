@@ -13,7 +13,9 @@ from Kaggle and contains information on patients diagnosed with Alzheimer's.
 The dataset contains multiple attributes, but our analysis focuses on the following key variables:
 
 Age: The age of the patient
+
 Gender: Male or Female
+
 Diagnosis: Whether the patient has Alzheimer's disease (1) or not (0)
 
 🚀 Project Workflow
