@@ -39,3 +39,25 @@ plot_detailed_age_group_analysis(alzhData): Provides a detailed breakdown of gen
 
 tests(alzhData): Performs T-test for age comparison and Chi-Square test for gender-diagnosis association.
 age_diagnosis(alzhData): Examines age distribution with respect to diagnosis
+
+🛠 How to Run the Project
+
+1.Ensure you have Python installed with the required libraries:
+pip install pandas seaborn matplotlib scipy
+2.Place the dataset file (alzheimers_disease_data.csv) in the same directory as the script.
+3.Run the script:python script_name.py
+
+
+📊 Expected Outcomes
+
+Identification of key demographic factors influencing Alzheimer's diagnosis.
+Visualization of patterns in age, gender, and diagnosis distribution.
+Statistical validation of whether differences in age and gender are significant predictors of Alzheimer's.
+Insights for further research on how demographics correlate with Alzheimer's disease.
+
+
+📚 References
+
+Dataset Source: https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset/data
+Statistical Methods: SciPy documentation on T-tests and Chi-Square tests
+
