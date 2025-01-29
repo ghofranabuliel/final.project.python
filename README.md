@@ -87,6 +87,7 @@ Insights for further research on how demographics correlate with Alzheimer's dis
 
 
 Project Structure
+
 alzheimers_analysis
 │── data
 │   │── raw
