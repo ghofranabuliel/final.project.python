@@ -18,6 +18,24 @@ Gender: Male or Female
 
 Diagnosis: Whether the patient has Alzheimer's disease (1) or not (0)
 
+
+Research Question
+
+Does age or gender significantly impact the likelihood of being diagnosed with Alzheimer's disease?
+
+ Results
+
+No missing values were found in the dataset.
+
+Age does not significantly impact diagnosis (T-test p-value 0.7782).
+
+Gender does not significantly impact diagnosis (Chi-square p-value 0.2596).
+
+The prevalence of Alzheimer's is fairly consistent across different age groups, with a slight peak around age 67.
+
+Diagnosis rates remain stable across age groups (60-90).
+
+
 🚀 Project Workflow
 
 1️⃣ Load and Preprocess Data
@@ -44,7 +62,13 @@ plot_detailed_age_group_analysis(alzhData): Provides a detailed breakdown of gen
 tests(alzhData): Performs T-test for age comparison and Chi-Square test for gender-diagnosis association.
 age_diagnosis(alzhData): Examines age distribution with respect to diagnosis
 
-🛠 How to Run the Project
+🛠 Virtual Environment Activation
+
+To create and activate a virtual environment:
+
+python -m venv env
+source env/bin/activate  # On macOS/Linux
+env\Scripts\activate  # On Windows
 
 1.Ensure you have Python installed with the required libraries:
 pip install pandas
@@ -62,8 +86,61 @@ Statistical validation of whether differences in age and gender are significant 
 Insights for further research on how demographics correlate with Alzheimer's disease.
 
 
+Project Structure
+alzheimers_analysis
+│── data
+│   │── raw
+│   │   │── alzheimers_disease_data.csv  # Original dataset
+│   │── processed
+│   │   │── filtered_alzheimers_data.csv  # Cleaned dataset
+│   │   │── processed_alzheimers_data.csv  # Final dataset after preprocessing
+│
+│── src
+│   │── __init__.py
+│   │── preprocessing
+│   │   │── __init__.py
+│   │   │── load_data.py 
+│   │   │── clean_data.py 
+│   │
+│   │── analysis
+│   │   │── __init__.py
+│   │   │── eda.py  
+│   │   │── statistical_tests.py  
+│   │
+│   │── visualization
+│   │   │── __init__.py
+│   │   │── plots.py  # Functions for visualizing distributions
+│
+│── tests
+│   │── __init__.py
+│   │── test_data_processing.py  # Tests for data preprocessing
+│   │── test_analysis.py  # Tests for statistical functions
+│
+│── main.py  # Main script to run the entire analysis
+│── README.md  # Project documentation
+│── requirements.txt  
+│── pyproject.toml  
+│── alzheimers_analysis.code-workspace  
+
+
+
+
+
+📌 Uses
+
+
+Research & Academic Analysis: Understanding demographic factors affecting Alzheimer's diagnosis.
+
+Data Visualization: Generating visual insights for diagnosis distribution.
+
+Statistical Testing: Performing T-tests and Chi-square tests to assess significance.
+
+Predictive Modeling: Can be extended for machine learning-based predictions.
+
 📚 References
 
 Dataset Source: https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset/data
 Statistical Methods: SciPy documentation on T-tests and Chi-Square tests
+
+
 
