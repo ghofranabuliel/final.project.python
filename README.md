@@ -47,7 +47,9 @@ age_diagnosis(alzhData): Examines age distribution with respect to diagnosis
 🛠 How to Run the Project
 
 1.Ensure you have Python installed with the required libraries:
-pip install pandas seaborn matplotlib scipy
+pip install pandas
+seaborn 
+matplotlib scipy
 2.Place the dataset file (alzheimers_disease_data.csv) in the same directory as the script.
 3.Run the script:python script_name.py
 
